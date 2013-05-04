@@ -141,5 +141,7 @@ done
 if is_play $BUILD_DIR && [ -d $SBT_USER_HOME/.ivy2 ] ; then
   echo "-----> Dropping ivy cache from the slug" 
   rm -rf $SBT_USER_HOME/.ivy2 
+  DEBUG1=`ls -la $SBT_USER_HOME/.ivy2`
+  echo "result ls $SBT_USER_HOME/.ivy2:"${DEBUG1}
 fi
 
